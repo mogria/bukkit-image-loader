@@ -6,6 +6,8 @@ public class ImageLoader extends JavaPlugin {
     @Override
     public void onEnable(){
         getLogger().info("ImageLoader has been enabled.");
+        
+        getCommand("imageloader").setExecutor(new ImageLoaderCommandExecutor(this));
     }
  
     @Override

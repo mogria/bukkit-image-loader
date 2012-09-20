@@ -1,3 +1,9 @@
 name: ImageLoader
 main: me.cerealshit.ImageLoader.ImageLoader
 version: 0.1
+commands:
+   imageloader:
+      description: Loads an image from disk into minecraft
+      usage: /<command>
+      permission: imageloader.imageloader
+      permission-message: You don't have <permission>

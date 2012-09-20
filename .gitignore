@@ -6,3 +6,5 @@
 *.ear
 
 nbproject/
+build/
+dist/
