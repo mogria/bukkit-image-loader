@@ -1,5 +1,5 @@
 name: ImageLoader
-main: me.cerealshit.ImageLoader.ImageLoader
+main: org.cerealshit.ImageLoader.ImageLoader
 version: 0.1
 commands:
    imageloader:
