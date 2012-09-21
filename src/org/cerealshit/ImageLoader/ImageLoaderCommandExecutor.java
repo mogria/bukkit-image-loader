@@ -100,7 +100,7 @@ public class ImageLoaderCommandExecutor implements CommandExecutor {
         
         for(ArrayList<Integer> lineBlockId: blockIds)
         {   
-            setLocation.setY(setLocation.getY() + 1);
+            setLocation.setZ(setLocation.getZ() + 1);
             setLocation.setX(x);
             for(Integer blockId:lineBlockId)
             {
