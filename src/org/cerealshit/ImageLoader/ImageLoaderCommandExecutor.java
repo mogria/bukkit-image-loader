@@ -23,22 +23,22 @@ public class ImageLoaderCommandExecutor implements CommandExecutor {
         return false;
     }
     
-    public void loadImage(Location location,ArrayList<ArrayList<Block>> blocks){
+    public void loadImage(Location location,ArrayList<ArrayList<Integer>> blockIds){
         
         double x = location.getX();
         double y = location.getY();
         double z = location.getZ();
         Location setLocation = new Location(location.getWorld(),x,y,z);
         
-        for(ArrayList<Block> lineBlock: blocks)
+        for(ArrayList<Integer> lineBlockId: blockIds)
         {   
             setLocation.setY(setLocation.getY() + 1);
             setLocation.setX(x);
-            for(Block block:lineBlock)
+            for(Integer blockId:lineBlockId)
             {
                 setLocation.setX(setLocation.getX() + 1);
                 Block bleockli = setLocation.getBlock();
-                bleockli.setTypeId(block.getTypeId());
+                bleockli.setTypeId(blockId);
                 
             }
         }
